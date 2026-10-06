@@ -1,0 +1,6 @@
+:root { --pri: #2e8b57; --pri2: #e9f5ee; --mut: #5d6f63; --bd: #dbe7de; }
+[data-bs-theme="dark"] { --pri: #4cc084; --pri2: #203a2b; --mut: #9db0a3; --bd: #2c3d32; }
+body { background: #f6faf5; }
+[data-bs-theme="dark"] body { background: #121a15; }
+.btn-primary { --bs-btn-bg: var(--pri); --bs-btn-border-color: var(--pri); --bs-btn-hover-bg: #257048; --bs-btn-hover-border-color: #257048; --bs-btn-active-bg: #257048; --bs-btn-active-border-color: #257048; }
+.btn-outline-primary { --bs-btn-color: var(--pri); --bs-btn-border-color: var(--pri); --bs-btn-hover-bg: var(--pri); --bs-btn-hover-border-color: var(--pri); }

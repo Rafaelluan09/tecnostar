@@ -1,0 +1,2 @@
+.marca { font-weight: 800; color: var(--pri); }
+.link:hover { background: var(--pri2); color: var(--pri); border-radius: 8px; }

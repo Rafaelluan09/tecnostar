@@ -1,0 +1,4 @@
+.caixa { max-width: 480px; margin: 20px auto; }
+.valor { font-size: 2.6rem; font-weight: 800; color: var(--pri); }
+.barra { height: 12px; border-radius: 6px; position: relative; margin: 18px 0; background: linear-gradient(90deg, #4aa3df 0 14%, #4cc084 14% 38%, #f0b429 38% 58%, #e07a1f 58% 78%, #d9382b 78% 100%); }
+.barra i { position: absolute; top: -5px; width: 4px; height: 22px; background: currentColor; border-radius: 2px; }

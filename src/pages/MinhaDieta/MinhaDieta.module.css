@@ -1,0 +1,5 @@
+.macro { background: var(--pri2); border-radius: 10px; padding: 10px; text-align: center; }
+.macro b { display: block; font-size: 1.3rem; color: var(--pri); }
+.refeicao { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--bd); }
+.refeicao:last-child { border: 0; }
+.pilula { background: var(--pri2); color: var(--pri); border-radius: 20px; padding: 3px 12px; font-weight: 700; white-space: nowrap; height: fit-content; font-size: 0.9rem; }
