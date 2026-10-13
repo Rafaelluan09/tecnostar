@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: tecnostar
+  profiles:
+    active: dev  # "dev" ou "prod"

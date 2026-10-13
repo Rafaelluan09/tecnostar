@@ -1,0 +1,100 @@
+### Testes da API TecnoStar (VS Code: extensão REST Client | IntelliJ: HTTP Client)
+### Rode a aplicação e clique em "Send Request" acima de cada bloco.
+### Troque o {{id}} pelo id devolvido no cadastro (normalmente 1).
+
+@host = http://localhost:8080/api/v1
+@id = 1
+
+### Status da API
+GET {{host}}/index
+
+### Criar conta
+POST {{host}}/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria@email.com",
+  "telefone": "11999998888",
+  "dataNascimento": "2000-05-20",
+  "senha": "123456"
+}
+
+### Login
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "maria@email.com",
+  "senha": "123456"
+}
+
+### Listar usuários
+GET {{host}}/usuarios
+
+### Buscar usuário por id
+GET {{host}}/usuarios/{{id}}
+
+### Atualizar usuário
+PUT {{host}}/usuarios/{{id}}
+Content-Type: application/json
+
+{
+  "nome": "Maria Souza Silva",
+  "telefone": "11988887777",
+  "dataNascimento": "2000-05-20"
+}
+
+### Salvar dados e objetivos (perfil)
+PUT {{host}}/usuarios/{{id}}/perfil
+Content-Type: application/json
+
+{
+  "peso": 70,
+  "altura": 165,
+  "idade": 25,
+  "genero": "f",
+  "nivelAtividade": 1.375,
+  "objetivo": "emagrecer",
+  "preferencia": "comum"
+}
+
+### Ver perfil
+GET {{host}}/usuarios/{{id}}/perfil
+
+### Minha dieta
+GET {{host}}/usuarios/{{id}}/dieta
+
+### Registrar peso
+POST {{host}}/usuarios/{{id}}/pesos
+Content-Type: application/json
+
+{
+  "peso": 69.5
+}
+
+### Histórico de peso
+GET {{host}}/usuarios/{{id}}/pesos
+
+### Água de hoje
+GET {{host}}/usuarios/{{id}}/agua/hoje
+
+### Marcar copos de água de hoje
+PUT {{host}}/usuarios/{{id}}/agua/hoje
+Content-Type: application/json
+
+{
+  "copos": 3
+}
+
+### Histórico de água
+GET {{host}}/usuarios/{{id}}/agua
+
+### Calcular IMC (altura em cm)
+GET {{host}}/imc?peso=70&altura=165
+
+### Desativar usuário (exclusão lógica)
+PUT {{host}}/usuarios/delete-logic/{{id}}
+
+### Excluir usuário (exclusão física)
+DELETE {{host}}/usuarios/{{id}}
