@@ -1,0 +1,3 @@
+.caixa { max-width: 560px; margin: 20px auto; }
+.linha { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--bd); }
+.linha:last-child { border: 0; }

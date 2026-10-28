@@ -1,0 +1,4 @@
+.hero { text-align: center; padding: 40px 8px 32px; max-width: 640px; margin: auto; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; }
+.atalho:hover { border-color: var(--pri); }
+.icone { font-size: 1.8rem; }

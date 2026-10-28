@@ -1,0 +1,4 @@
+.caixa { max-width: 560px; margin: 20px auto; }
+.copos { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.copo { width: 44px; height: 52px; border-radius: 8px; border: 2px solid #4aa3df; background: transparent; font-size: 1.3rem; }
+.cheio { background: #4aa3df33; }
